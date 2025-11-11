@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prova JS</title>
+  </head>
+  <body>
+    <h1>Prova JS</h1>
+    <script>
+      alert("Ciao dal browser!");
+
+      let name = "Luna"; //dichiarazione e inizializzazione di una variabile
+      console.log(name); //stampo la variabile in console
+
+      let str = "10";
+      let num = Number(str); //convertire una stringa in un numero
+
+      //metodi utili per le stringhe
+      console.log("Ciao " + name); //concatenazione di una stringa
+      let text = num.toString(); //convertire un numero in una stringa
+      let stringa = "Ciao sono una stringa";
+      console.log(stringa.length); //lunghezza stringa
+      console.log(stringa[stringa.length - 1]); //ci serve per stampare l'ultimo carattere dlla stringa
+      let indexUna = stringa.indexOf("una"); //trovo l'indice dell'inizio di una determinata parola della stringa
+      console.log(stringa.slice(indexUna)); //stampo solo una parte della stringa
+      console.log(stringa.replace("Ciao", "Ueue"));
+
+    </script>
+  </body>
+</html>
