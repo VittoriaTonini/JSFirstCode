@@ -2,9 +2,27 @@
 <html>
   <head>
     <title>Prova JS</title>
+     <style>
+      body {
+        font-family: Calibri, sans-serif; /* font della pagina */
+        background-color: #f3e8ff; /* colore sfondo */
+        color: #9966cc; /* colore testo */
+      }
+
+      h1 {
+        font-size: 2.5em; /*em indica che la misura è relativa al font del contenitore(body)*/
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 1.2em;
+      }
+    </style>
   </head>
   <body>
     <h1>Prova JS</h1>
+    <p>This is my first JavaScript project!</p>
+
     <script>
       alert("Ciao dal browser!");
 
@@ -23,6 +41,27 @@
       let indexUna = stringa.indexOf("una"); //trovo l'indice dell'inizio di una determinata parola della stringa
       console.log(stringa.slice(indexUna)); //stampo solo una parte della stringa
       console.log(stringa.replace("Ciao", "Ueue"));
+
+      //gli array
+      let citta = ['Torino', 'Milano', 'Napoli', 'Roma'];
+      console.log(citta[0]); //accedo all'elemento con indice 0 dell'array e lo stampo
+      
+      for(i=0; i<citta.length; i++){
+        console.log(citta[i]); //stampo ogni elemento dell'array
+      }
+
+      let frutta = 'mela, pera, fragola, banana';
+      let fruttaArr = frutta.split(','); //creo un array a partire da una stringa, mettendo la virgola come separatore
+      let fruttaStr = fruttaArr.join('-') //converto da array a stringa, metto - come sep
+
+      fruttaArr.push('mango');//aggiungo un frutto al fondo dell'array
+      fruttaArr.pop(); //elimino l'ultimo elemento dell'array
+      fruttaArr.unshift('lampone'); //aggiungo all'inizio
+      fruttaArr.shift(); //elimino all'inizio
+
+      console.log(fruttaArr);
+  
+
 
     </script>
   </body>
