@@ -46,7 +46,7 @@
       let citta = ['Torino', 'Milano', 'Napoli', 'Roma'];
       console.log(citta[0]); //accedo all'elemento con indice 0 dell'array e lo stampo
       
-      for(i=0; i<citta.length; i++){
+      for(let i=0; i<citta.length; i++){
         console.log(citta[i]); //stampo ogni elemento dell'array
       }
 
@@ -62,7 +62,6 @@
       console.log(fruttaArr);
 
       //condizioni
-
       if(name == 'Luna'){
         console.log('ciao Luna');
       }
@@ -83,6 +82,32 @@
           console.log('numero dispari');
         }
       }
+
+      //ternary operator
+      //varriabile = condizione ? si : no;
+      let nome = (number < 20) ? "Luna" : "Stella";
+
+      //loop
+      let arr = [20, 10, 34, 82, 7, 12];
+      //for
+      for(let i=0; i<arr.length; i++){
+        console.log(arr[i]);
+        if(arr[i] == 82){
+          break; //interrompo il ciclo se incontro il numero 82
+        }
+      }
+      //while
+      let i = 0;
+      while(i<arr.length){
+        console.log('while: ', arr[i]);
+        i++;
+      }
+      //do-while
+      let k = 0;
+      do{
+        console.log('do-while: ', arr[k]);
+        k++;
+      }while(k<arr.length);
   
     </script>
   </body>
